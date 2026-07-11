@@ -28,13 +28,13 @@ const SHORTCUTS = [
     id: 'nav-a1', category: 'Navigation',
     task: 'Jump straight to cell A1 (beginning of the worksheet)',
     win: { spec: { ctrl: true, key: 'Home' }, labels: ['Ctrl', 'Home'], safe: true },
-    mac: { spec: { ctrl: true, key: 'Home' }, labels: ['Ctrl', 'Home'], safe: true },
+    mac: { spec: { ctrl: true, key: 'Home' }, labels: ['Ctrl', 'fn', '←'], safe: true },
   },
   {
     id: 'nav-end', category: 'Navigation',
     task: 'Jump to the last used cell in the worksheet',
     win: { spec: { ctrl: true, key: 'End' }, labels: ['Ctrl', 'End'], safe: true },
-    mac: { spec: { ctrl: true, key: 'End' }, labels: ['Ctrl', 'End'], safe: true },
+    mac: { spec: { ctrl: true, key: 'End' }, labels: ['Ctrl', 'fn', '→'], safe: true },
   },
   {
     id: 'nav-goto', category: 'Navigation',
@@ -52,7 +52,7 @@ const SHORTCUTS = [
     id: 'nav-pgdn', category: 'Navigation',
     task: 'Move the view down one full screen',
     win: { spec: { key: 'PageDown' }, labels: ['Page Down'], safe: true },
-    mac: { spec: { key: 'PageDown' }, labels: ['Page Down'], safe: true },
+    mac: { spec: { key: 'PageDown' }, labels: ['fn', '↓'], safe: true },
   },
 
   // ---------- Selection ----------
@@ -84,13 +84,13 @@ const SHORTCUTS = [
     id: 'sel-begin', category: 'Selection',
     task: 'Extend the selection to the beginning of the worksheet',
     win: { spec: { ctrl: true, shift: true, key: 'Home' }, labels: ['Ctrl', 'Shift', 'Home'], safe: true },
-    mac: { spec: { ctrl: true, shift: true, key: 'Home' }, labels: ['Ctrl', 'Shift', 'Home'], safe: true },
+    mac: { spec: { ctrl: true, shift: true, key: 'Home' }, labels: ['Ctrl', 'Shift', 'fn', '←'], safe: true },
   },
   {
     id: 'sel-endext', category: 'Selection',
     task: 'Extend the selection to the last used cell',
     win: { spec: { ctrl: true, shift: true, key: 'End' }, labels: ['Ctrl', 'Shift', 'End'], safe: true },
-    mac: { spec: { ctrl: true, shift: true, key: 'End' }, labels: ['Ctrl', 'Shift', 'End'], safe: true },
+    mac: { spec: { ctrl: true, shift: true, key: 'End' }, labels: ['Ctrl', 'Shift', 'fn', '→'], safe: true },
   },
 
   // ---------- Formulas & Calculation ----------
